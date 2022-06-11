@@ -1,0 +1,23 @@
+@charset "UTF-8";
+// Переменные
+@import "./sass/utilits/variables";
+// Визуальное скрытие
+@import "./sass/utilits/headline-hidden";
+// Нормалайз
+@import "./sass/utilits/normalize";
+// Падинги на секции
+@import "./sass/utilits/section";
+// Хедер
+@import "./sass/components/header";
+// Секции
+@import "./sass/components/hero";
+@import "./sass/components/nft";
+@import "./sass/components/statue";
+@import "./sass/components/avatars";
+// Футер
+@import "./sass/components/footer";
+// Контейнер
+@import "./sass/utilits/container";
+body {
+  background-color: $color-default-black;
+}
