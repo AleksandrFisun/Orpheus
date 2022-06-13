@@ -8,16 +8,51 @@
 // Падинги на секции
 @import "./sass/utilits/section";
 // Хедер
-@import "./sass/components/header";
+@import "./sass/components/header-dark";
 // Секции
-@import "./sass/components/hero";
-@import "./sass/components/nft";
-@import "./sass/components/statue";
-@import "./sass/components/avatars";
+@import "./sass/components/hero-dark";
+@import "./sass/components/nft-dark";
+@import "./sass/components/statue-dark";
+@import "./sass/components/avatars-dark";
 // Футер
-@import "./sass/components/footer";
+@import "./sass/components/footer-dark";
 // Контейнер
 @import "./sass/utilits/container";
 body {
   background-color: $color-default-black;
+  font-family: $font-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.control__title {
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-right: 1px solid;
+  border-radius: 1px;
+  border-color: rgba(242, 187, 90, 0.876812);
+
+  background: linear-gradient(
+    295.38deg,
+    #ffe5a2 4.89%,
+    #bf841a 50.44%,
+    #ffcd74 95.06%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.control__link {
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
 }

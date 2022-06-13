@@ -176,7 +176,9 @@ p {
 
 body {
   margin: 0;
-  font-family: $font-roboto;
   color: $color-text-secondary;
+  text-decoration: none;
+}
+a {
   text-decoration: none;
 }

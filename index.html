@@ -6,27 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orpheus</title>
-    <link rel="stylesheet" href="./white.css" id="theme">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./dark.css" id="theme">
 </head>
 
 <body>
-    <header class="container">
+    <header class="container header">
 
-        <div class="">
-            <a href="./index.html">
-                <svg aria-label="Logotype">
+        <div class="logo">
+            <a href="./index.html" class="logo__link">
+                <svg aria-label="Logotype" class="logo__icon">
                     <use href="./img/svg/sprite.svg#icon-logo_dark">
                     </use>
                 </svg>
             </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Works</a> </li>
-                <li><a href="#">Contribution</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Get in Touch</a></li>
-                <li><button type="button" id="switchMode"><svg aria-label="switch sun">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Works</a> </li>
+                <li class="nav__item"><a class="nav__link" href="#">Contribution</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Community</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Get in Touch</a></li>
+                <li class="nav__item"><button class="nav__button" type="button" id="switchMode"><svg
+                            class="nav__button-icon" aria-label="switch sun">
                             <use href="./img/svg/sprite.svg#icon-Sun">
                             </use>
                         </svg></button></li>
@@ -34,83 +41,108 @@
         </nav>
     </header>
     <section class="hero container">
-        <div>
-            <h1>Yet the story of Orpheus</h1>
-            <p>Product & Graphic Designer, with experience in delivering end-to-end UX/UI design for software products.
+        <div class="hero__advertising">
+            <h1 class="hero__title">Yet the story of Orpheus</h1>
+            <p class="hero__text">Product & Graphic Designer, with experience in delivering end-to-end UX/UI design for
+                software products.
             </p>
-
-            <button type="button">Works</button>
-            <button type="button">Free Stuff</button>
+            <div class="hero__link">
+                <div class="hero__link-gradient"><a class="hero__link-works" href="#">Works</a></div>
+                <a class="hero__link-free" href="#">FREE STUFF</a>
+            </div>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="hero__img">
+            <img src="./img/png/hero-dark@2x.png" alt="Hero">
         </div>
     </section>
     <section class="nft container">
-        <div>
-            <p>Recent NFT</p>
-            <button type="button">View More</button>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
+        <div class="nft__section">
+            <div class="nft__control">
+                <p class="control__title">Recent NFT</p>
+                <a class="control__link" href="#">View More</a>
+            </div>
+            <div class="carousel__container">
+                <input type="radio" name="position" checked />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <main id="carousel">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <main>
+            </div>
         </div>
     </section>
     <section class="statue container">
-        <p>Contribution</p>
-        <button type="button">View More</button>
-        <div>
-            <img src="" alt="">
+        <div class="statue-control">
+            <p class="control__title">Contribution</p>
+            <a class="control__link" href="#">View More</a>
         </div>
-        <div>
-            <h2>3D Greek Statue Pack</h2>
-            <p>Over 200 Greek style sculpture</p>
-            <button type="button">Download</button>
+        <div class="container__statue">
+            <div class="statue__banner">
+            </div>
+            <div class="statue__description">
+                <h2 class="statue__title">3D Greek Statue Pack</h2>
+                <p class="statue__text">Over 200 Greek style sculpture</p>
+                <a class="statue__button" href="">Download</a>
+            </div>
         </div>
 
     </section>
     <section class="avatars container">
-        <h2>Greek Statue Avatars</h2>
-        <p>+500 Greek style
-            User Avatars</p>
-        <button type="button">Download</button>
+        <div class="avatars__section">
+            <div class="avatars__description">
+                <h2 class="avatars__title">Greek Statue Avatars</h2>
+                <p class="avatars__text">+500 Greek style
+                    User Avatars</p>
+                <a class="avatars__link" href="#">Download</a>
+            </div>
+            <div class="avatars__image"></div>
+        </div>
     </section>
     <footer class="footer container">
-        <p>Let’s Connect</p>
-        <p>Get in touch for opportunities or just to say hi! 👋</p>
-        <ul>
-            <li>
-            <li> <a href=""><svg aria-label="switch sun">
-                        <use href="./img/svg/sprite.svg#icon-Sun">
-                        </use>
-                    </svg></a> </li>
-            </li>
-            <li>
-            <li> <a href=""><svg aria-label="switch sun">
-                        <use href="./img/svg/sprite.svg#icon-Sun">
-                        </use>
-                    </svg></a> </li>
-            </li>
-            <li>
-            <li> <a href=""><svg aria-label="switch sun">
-                        <use href="./img/svg/sprite.svg#icon-Sun">
-                        </use>
-                    </svg></a> </li>
-            </li>
-            <li>
-            <li> <a href=""><svg aria-label="switch sun">
-                        <use href="./img/svg/sprite.svg#icon-Sun">
-                        </use>
-                    </svg></a> </li>
-            </li>
-            <li>
-            <li> <a href=""><svg aria-label="switch sun">
-                        <use href="./img/svg/sprite.svg#icon-Sun">
-                        </use>
-                    </svg></a> </li>
-            </li>
-        </ul>
+        <div>
+            <p class="footer__title">Let’s Connect</p>
+            <p class="footer__text">Get in touch for opportunities or just to say hi! 👋</p>
+        </div>
+        <div>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__icon-link" href="#"><svg aria-label="switch sun" class="footer__social">
+                            <use class="footer__social-icon" href="./img/svg/sprite.svg#icon-linkedin">
+                            </use>
+                        </svg></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__icon-link" href="#"><svg aria-label="switch sun" class="footer__social">
+                            <use class="footer__social-icon" href="./img/svg/sprite.svg#icon-web">
+                            </use>
+                        </svg></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__icon-link" href="#"><svg aria-label="switch sun" class="footer__social">
+                            <use class="footer__social-icon" href="./img/svg/sprite.svg#icon-instagram">
+                            </use>
+                        </svg></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__icon-link" href="#"><svg aria-label="switch sun" class="footer__social">
+                            <use class="footer__social-icon" href="./img/svg/sprite.svg#icon-medium">
+                            </use>
+                        </svg></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__icon-link" href="#"><svg aria-label="switch sun" class="footer__social">
+                            <use class="footer__social-icon" href="./img/svg/sprite.svg#icon-mail">
+                            </use>
+                        </svg></a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 <script src="./white_dark.js" type="module"></script>

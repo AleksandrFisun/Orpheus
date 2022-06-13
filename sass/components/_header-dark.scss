@@ -1,0 +1,48 @@
+.header {
+  padding-top: 43px;
+  padding-bottom: 14px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 12, 16, 0.25);
+  border-bottom: 1px solid #101822;
+  backdrop-filter: blur(25px);
+}
+// Иконка логотипа
+.logo {
+  border-image-source: radial-gradient(
+    81.21% 127.61% at 50% 0%,
+    #f7d587 0%,
+    #8a5b08 59.52%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.logo__icon {
+  width: 162px;
+  height: 44px;
+}
+// Список меню
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin-right: 34px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.nav__link {
+  padding: 12px 9px;
+  text-decoration: none;
+  color: $color-text;
+}
+.nav__button {
+  background: none;
+}
+.nav__button-icon {
+  width: 21px;
+  height: 21px;
+}
+//
